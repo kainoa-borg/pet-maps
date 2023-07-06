@@ -1,0 +1,55 @@
+:root {
+  --main-bg: #DAD2D8;
+  --primary-bg: #143642;
+  --secondary-bg: #0F8B8D;
+  --accent-bg: #EC9A29;
+  --loud-bg: #EC9A29;
+}
+
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.leaflet-control {
+  z-index: 0 !important
+}
+.leaflet-pane {
+  z-index: 0 !important
+}
+.leaflet-top {
+  z-index: 0 !important
+}
+.leaflet-popup-content-wrapper {
+  z-index: 20 !important
+}
+
+.testingClass {
+  background-color: var(--accent-bg);
+}
+
+.search-container {
+  background-color: var(--main-bg);
+  padding: 1rem;
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 2;
+}
+.search-container h1 {
+  padding-top: 0;
+  margin-top: 0;
+}
+.search-container .query-box {
+  display: grid;
+  grid-auto-flow: column;
+  /* grid-auto-columns: 1fr; */
+  grid-template-columns: 1fr, 2fr, 1fr, 2fr;
+}
+
+.search-button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: medium;
+}
